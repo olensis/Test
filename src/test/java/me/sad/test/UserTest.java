@@ -34,7 +34,7 @@ public class UserTest {
     @Test
     @DisplayName("When login is not equals email , then parameters are correct")
     public void loginNotEqualsEmail() {
-        String login = "sad";
+        String login = "sad@ru";
         String email = "sad@ru";
         Assertions.assertThrows(RuntimeException.class,()-> new User(login,email));
     }
